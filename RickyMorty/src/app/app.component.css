@@ -1,0 +1,77 @@
+.paralax{
+  background-image: url("../assets/img/screenshot.png");
+  
+}
+.title{
+  margin-right: 1em;
+ 
+}
+.pagination{
+  width: auto;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+  background-color: #ccc;
+  padding-left: 1em;
+}
+.contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  width: 80%;
+  
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  padding: 2em;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.card img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.card .flotador {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  
+  color: white;
+  padding: 8px;
+}
+
+.human{
+  background-color: rgb(131, 86, 60);
+}
+
+.alien{
+  background-color: teal;
+}
+
+.alive {
+  background-color: green;
+  color: white;
+  text-align: center;
+  width: 40%;
+
+}
+
+.dead {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+

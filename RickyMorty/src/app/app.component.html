@@ -1,0 +1,27 @@
+<div class="paralax">
+  <div class="pagination d-block position-fixed">
+    <h1 class="title">PAGES</h1>
+    <h2>{{paginaActual}}/{{numPaginas}}</h2>
+    <button class="btn btn-danger" (click)="changePage(false)" [disabled]="paginaActual === 1">Prev</button>
+    <button class="btn btn-danger" (click)="changePage(true)" [disabled]="paginaActual === numPaginas">Next</button>
+  </div>
+
+  <div class="contain position-sticky">
+
+
+    <div class="card" *ngFor="let personajes of pj">
+
+      <img class="card-img-top" [src]="personajes.image">
+
+      <div class="card-body">
+        <!-- p class="flotador">{{personajes.species}}</p> -->
+        <p class="flotador" [ngClass]="{human: personajes.species ==='Human', alien: personajes.species ==='Alien'}">
+          {{personajes.species}}</p>
+        <h3 class="card-tittle">Name: {{personajes.name}}</h3>
+        <p class="card-text">Origin: {{personajes.origin.name}} </p>
+        <p class="card-text" [ngClass]="{alive: personajes.status === 'Alive', dead: personajes.status === 'Dead'}">
+          State: {{personajes.status}} </p>
+      </div>
+
+    </div>
+  </div>
